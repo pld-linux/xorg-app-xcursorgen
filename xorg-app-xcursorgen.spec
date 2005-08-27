@@ -1,5 +1,3 @@
-# $Rev: 3377 $, $Date: 2005-08-27 17:42:47 $
-#
 Summary:	xcursorgen application
 Summary(pl):	Aplikacja xcursorgen
 Name:		xorg-app-xcursorgen
@@ -16,9 +14,7 @@ BuildRequires:	xorg-lib-libXcursor-devel
 BuildRequires:	libpng-devel
 BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
-BuildRoot:	%{tmpdir}/xcursorgen-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 xcursorgen application
@@ -26,10 +22,8 @@ xcursorgen application
 %description -l pl
 Aplikacja xcursorgen
 
-
 %prep
 %setup -q -n xcursorgen-%{version}
-
 
 %build
 %{__aclocal}
@@ -40,17 +34,14 @@ Aplikacja xcursorgen
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)

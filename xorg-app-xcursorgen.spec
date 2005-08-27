@@ -10,17 +10,17 @@ Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/app/xcursorgen-%{version}.tar.b
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-lib-libXcursor-devel
 BuildRequires:	libpng-devel
-BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
+BuildRequires:	xorg-lib-libXcursor-devel
+BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xcursorgen application
+xcursorgen application.
 
 %description -l pl
-Aplikacja xcursorgen
+Aplikacja xcursorgen.
 
 %prep
 %setup -q -n xcursorgen-%{version}

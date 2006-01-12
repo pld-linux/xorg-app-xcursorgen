@@ -1,12 +1,12 @@
 Summary:	xcursorgen application
 Summary(pl):	Aplikacja xcursorgen
 Name:		xorg-app-xcursorgen
-Version:	0.99.2
+Version:	1.0.0
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/app/xcursorgen-%{version}.tar.bz2
-# Source0-md5:	5327ce370089d4e7a30b1dc3a2961999
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/xcursorgen-%{version}.tar.bz2
+# Source0-md5:	0a57aa0a265e8ec83472d970d3e387fc
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -47,4 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/xcursorgen
-%{_mandir}/man1/xcursorgen.1*
+%{_mandir}/man1/xcursorgen.1x*

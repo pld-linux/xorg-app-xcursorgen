@@ -2,7 +2,7 @@ Summary:	xcursorgen application
 Summary(pl):	Aplikacja xcursorgen
 Name:		xorg-app-xcursorgen
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xcursorgen-%{version}.tar.bz2

@@ -1,5 +1,5 @@
 Summary:	xcursorgen application
-Summary(pl.UTF-8):   Aplikacja xcursorgen
+Summary(pl.UTF-8):	Aplikacja xcursorgen
 Name:		xorg-app-xcursorgen
 Version:	1.0.1
 Release:	2

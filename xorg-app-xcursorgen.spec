@@ -1,5 +1,5 @@
-Summary:	xcursorgen application
-Summary(pl.UTF-8):	Aplikacja xcursorgen
+Summary:	xcursorgen application - create an X cursor file from a collection of PNG images
+Summary(pl.UTF-8):	Aplikacja xcursorgen do tworzenia pliku kursora X ze zbioru obrazów PNG
 Name:		xorg-app-xcursorgen
 Version:	1.0.1
 Release:	2
@@ -17,10 +17,10 @@ BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xcursorgen application.
+xcursorgen creates an X cursor file from a collection of PNG images.
 
 %description -l pl.UTF-8
-Aplikacja xcursorgen.
+xcursorgen tworzy plik kursora X ze zbioru obrazów PNG.
 
 %prep
 %setup -q -n xcursorgen-%{version}

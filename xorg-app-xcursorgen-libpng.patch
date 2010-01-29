@@ -1,0 +1,11 @@
+--- xcursorgen-1.0.3/configure.ac~	2009-10-17 02:41:39.000000000 +0200
++++ xcursorgen-1.0.3/configure.ac	2010-01-29 21:10:09.991792943 +0100
+@@ -18,7 +18,7 @@
+ XORG_DEFAULT_OPTIONS
+ 
+ # Checks for pkg-config packages
+-PKG_CHECK_MODULES(XCURSORGEN, x11 xcursor libpng12)
++PKG_CHECK_MODULES(XCURSORGEN, x11 xcursor libpng)
+ AC_SUBST(XCURSORGEN_CFLAGS)
+ AC_SUBST(XCURSORGEN_LIBS)
+ 

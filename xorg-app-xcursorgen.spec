@@ -1,20 +1,23 @@
 Summary:	xcursorgen application - create an X cursor file from a collection of PNG images
 Summary(pl.UTF-8):	Aplikacja xcursorgen do tworzenia pliku kursora X ze zbioru obrazów PNG
 Name:		xorg-app-xcursorgen
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	https://xorg.freedesktop.org/releases/individual/app/xcursorgen-%{version}.tar.bz2
-# Source0-md5:	25cc7ca1ce5dcbb61c2b471c55e686b5
+Source0:	https://xorg.freedesktop.org/releases/individual/app/xcursorgen-%{version}.tar.xz
+# Source0-md5:	89e81a1c31e4a1fbd0e431425cd733d7
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libpng-devel >= 1.2
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXcursor-devel
+BuildRequires:	xorg-proto-xproto-devel >= 7.0.22
 BuildRequires:	xorg-util-util-macros >= 1.8
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
